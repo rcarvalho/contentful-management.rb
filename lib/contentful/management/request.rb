@@ -7,6 +7,8 @@ module Contentful
       attr_reader :client, :type, :query, :id, :endpoint
 
       def initialize(client, endpoint, query = {}, id = nil, header = {})
+        query ||= {}
+        header ||= {}
         @header = header
         @initial_id = id
         @client = client
