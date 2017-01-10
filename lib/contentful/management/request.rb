@@ -19,7 +19,8 @@ module Contentful
         @endpoint = endpoint
 
         @query = normalize_query(query) if query && !query.empty?
-
+        @query ||= query
+        
         if id
           @type = :single
           @id = URI.escape(id)
