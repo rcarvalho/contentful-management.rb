@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'contentful/management/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'rcarvalho-contentful-management'
+  spec.name          = 'contentful-management'
   spec.version       = Contentful::Management::VERSION
   spec.authors       = ['Piotr Protas','Tomasz Warkocki','Contentful GmbH (Andreas Tiefenthaler)']
   spec.email         = ['piotrek@codequest.com','warkocz@gmail.com', 'rubygems@contentful.com']
